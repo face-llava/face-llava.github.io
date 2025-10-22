@@ -52,7 +52,7 @@
 </nav>
 
 <!-- Top Image Section -->
-<section class="section has-text-centered" style="padding-top: 1rem; padding-bottom: 0.5rem;">
+<section class="section has-text-centered" style="padding-top: 1rem; padding-bottom: 0; margin-bottom: 0;">
   <div class="container is-max-desktop">
     <div class="columns is-centered">
       <div class="column is-half">
@@ -61,13 +61,16 @@
     </div>
   </div>
 </section>
-
-<section class="hero" style="padding-top: 0.5rem;">
-  <div class="hero-body">
+<section class="hero" style="padding-top: 0; margin-top: 0;">
+  <div class="hero-body" style="padding-top: 0;">
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Facial Expression and <br>Attribute Understanding through Instruction Tuning</h1>
+          <h1 class="title is-1 publication-title">Facial Expression and Attribute Understanding through Instruction Tuning</h1>
+
+          <div class="is-size-4 publication-venue" style="margin-bottom: 1rem; text-align: center; width: 100%;">
+            WACV 2026 - <span style="color: #ff3860; font-weight: bold;">Round-1 Early Accept (6.4% acceptance rate)</span>
+          </div>
 
           <div class="is-size-5 publication-authors">
             <span class="author-block">
@@ -97,7 +100,7 @@
               </span>
               <!-- Code Link. -->
               <span class="link-block">
-                <a href=""
+                <a href="https://github.com/ihp-lab/Face-LLaVA/"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
@@ -105,11 +108,21 @@
                   <span>Code</span>
                   </a>
               </span>
+              <!-- Hugging Face Link. -->
               <span class="link-block">
                 <a href=""
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
-                      <i class="fab fa-github"></i>
+                      <img src="static/images/hf-logo.png" alt="Hugging Face Logo" style="height: 1.5em; vertical-align: middle;">
+                  </span>
+                  <span>Model</span>
+                  </a>
+              </span>
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                   <span class="icon">
+                      <img src="static/images/hf-logo.png" alt="Hugging Face Logo" style="height: 1.5em; vertical-align: middle;">
                   </span>
                   <span>Dataset</span>
                   </a>
@@ -273,19 +286,19 @@
     </section>
 
 
-<!-- <section class="section" id="BibTeX">
+<section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@misc{chang2024magicpose,
-      title={MagicPose: Realistic Human Poses and Facial Expressions Retargeting with Identity-aware Diffusion}, 
-      author={Di Chang and Yichun Shi and Quankai Gao and Jessica Fu and Hongyi Xu and Guoxian Song and Qing Yan and Yizhe Zhu and Xiao Yang and Mohammad Soleymani},
-      year={2024},
-      eprint={2311.12052},
+    <pre><code>@misc{chaubey2025facellava,
+      title={Face-LLaVA: Facial Expression and Attribute Understanding through Instruction Tuning}, 
+      author={Ashutosh Chaubey and Xulang Guan and Mohammad Soleymani},
+      year={2025},
+      eprint={2504.07198},
       archivePrefix={arXiv},
       primaryClass={cs.CV}
 }</code></pre>
   </div>
-</section> -->
+</section>
 
 
 <section class="section" id="Acknowledgement">
@@ -312,6 +325,8 @@
     </div>
   </div>
 </footer>
+
+
 
 </body>
 </html>
