@@ -33,6 +33,13 @@
         href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
 
+  <style>
+    /* Navbar: center Other Projects dropdown */
+    .navbar-menu.navbar-menu-centered { justify-content: center; }
+    .navbar .navbar-item.other-projects-trigger.navbar-link { background: rgba(255, 56, 96, 0.12); color: #ff3860; font-weight: 700; border-radius: 8px; }
+    .navbar .navbar-item.other-projects-trigger.navbar-link:hover { background: rgba(255, 56, 96, 0.2); color: #cc2d4d; }
+  </style>
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
   <script src="./static/js/bulma-carousel.min.js"></script>
@@ -48,6 +55,21 @@
       <span aria-hidden="true"></span>
       <span aria-hidden="true"></span>
     </a>
+  </div>
+  <div class="navbar-menu navbar-menu-centered">
+    <div class="navbar-item has-dropdown is-hoverable">
+      <a class="navbar-link other-projects-trigger">
+        <span class="icon"><i class="fas fa-external-link-alt"></i></span>
+        <span>Other Projects</span>
+      </a>
+      <div class="navbar-dropdown is-right">
+        <a href="https://avere-iclr.github.io/" class="navbar-item" target="_blank" rel="noopener">
+          <span class="icon"><i class="fas fa-external-link-alt"></i></span>
+          AVERE (ICLR 2026)
+        </a>
+        <!-- Add more project links here -->
+      </div>
+    </div>
   </div>
 </nav>
 
